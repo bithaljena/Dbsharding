@@ -1,0 +1,19 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,beans,env
+
+  endpoint:
+    prometheus:
+      enabled: true
+    beans:
+      enabled: true
+    env:
+      enabled: true
+    info:
+      enabled: true
+Spring:
+ h2:
+  console:
+    enabled: true
